@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load model
-model = joblib.load(path + "random_forest_model.pkl")
+model = joblib.load("random_forest_model.pkl")
 
 @app.route("/predict", methods=["POST"])
 def predict():
